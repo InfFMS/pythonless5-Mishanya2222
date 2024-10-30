@@ -4,3 +4,9 @@
 # Пример: ввод N = 6
 # [1,2,3,4,5,6]
 # Вывод: [3,2,1,6,5,4]
+import random
+t = [random.randint(1,100) for i in range(1,int(input()), 2)]
+print(t)
+print(len(t))
+m = t[int(len(t)/2)-1::-1] + t[:int(len(t)/2)-1:-1]
+print(m)
