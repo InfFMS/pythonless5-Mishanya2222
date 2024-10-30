@@ -4,3 +4,18 @@
 # Пример: ввод N = 6
 # [20, -90, 15, -34, 10, 0]
 # Вывод: [20, 15, 10, -90, -34, 0]
+import random
+t = [random.randint(-100,100) for i in range(int(input()))]
+m = []
+k = []
+s = []
+
+for i in t:
+    if i <0:
+        k.append(i)
+    elif i > 0:
+        m.append(i)
+    else:
+        s.append(i)
+t = m + k + s
+print(t)

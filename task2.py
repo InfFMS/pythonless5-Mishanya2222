@@ -7,3 +7,24 @@
 # Вывод:
 # значение:3 индексы 2 и 3
 # значение:2 индексы 4 и 5
+
+import random
+g = []
+i = 0
+conter1 = 0
+m = None
+stop = int(input('введите количество эллементов в списке'))
+while True:
+    if i == stop:
+        break
+    t = random.randint(0,5)
+    g.append(t)
+    i = i+1
+for r in g:
+    conter1 = conter1 + 1
+    conter2 = 0
+    for j in g:
+        conter2 = conter2 + 1
+        if r == j and (conter2 - 1 == conter1):
+            print(conter1, conter2)
+print(g)
